@@ -1,0 +1,25 @@
+{
+  "name": "fhe-secret-lottery",
+  "version": "1.0.0",
+  "description": "Decentralized lottery with encrypted bets using FHE technology",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network sepolia",
+    "start": "cd client && npm start",
+    "client:setup": "cd client && npm install"
+  },
+  "keywords": ["lottery", "FHE", "zama", "privacy", "blockchain"],
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0"
+  }
+}
+
